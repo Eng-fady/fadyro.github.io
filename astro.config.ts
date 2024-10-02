@@ -65,7 +65,7 @@ const astroSearch = (): AstroIntegration => {
   return {
     name: integrationName,
     hooks: {
-      "astro:build:done": ({ dir }) => {
+      "astro:build:done": ({ dir }: { dir: URL }) => {
         const targetDir = fileURLToPath(dir)
         const cwd = dirname(fileURLToPath(import.meta.url))
         const relativeDir = relative(cwd, targetDir)
