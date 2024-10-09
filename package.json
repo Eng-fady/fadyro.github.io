@@ -11,7 +11,9 @@
     "dev": "astro dev",
     "start": "astro dev",
     "preview": "astro preview",
-    "astro": "astro"
+    "astro": "astro",
+    "test": "vitest",
+    "coverage": "vitest run --coverage"
   },
   "prettier": {
     "semi": false,
@@ -41,8 +43,10 @@
     "typescript": "^5.4.5"
   },
   "devDependencies": {
+    "@vitest/coverage-v8": "2.1.2",
     "cspell": "^8.10.4",
     "prettier": "^3.2.5",
-    "prettier-plugin-astro": "^0.14.0"
+    "prettier-plugin-astro": "^0.14.0",
+    "vitest": "^2.1.2"
   }
 }
